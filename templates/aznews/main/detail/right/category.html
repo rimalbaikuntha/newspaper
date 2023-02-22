@@ -1,0 +1,13 @@
+<aside class="single_sidebar_widget post_category_widget">
+  <h4 class="widget_title">Category</h4>
+  <ul class="list cat-list">
+    {% for top_category in whats_new_categories %}
+      <li>
+        <a href="#" class="d-flex">
+          <p>{{ top_category.name|title }}</p>
+          <p>({{ top_category.post_set.count }})</p>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</aside>
